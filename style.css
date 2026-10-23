@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+  --highlight-color: #FFFFFF;
+  --highlight-color-2: #F0F0F0;
+  --normal-color: #E0E0E0;
+  --light-bg-color: #C0C0C0;
+  --normal-bg-color: #A0A0A0;
+  --dark-bg-color: #404040;
+  --evern-darker-bg-color: #303030;
+
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  background-color: black;  
+  color: var(--normal-color);
+  padding-top: 0.7rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+h1 {
+  color: var(--highlight-color);
+}
+
+h2 {
+  color: var(--highlight-color-2);
+}
+
+a {
+  color: var(--normal-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--normal-color);
+  text-decoration: none;
+}
+
+.contact-card {
+  padding: 0.5rem;
+  background-color: var(--dark-bg-color);
+  border: 4px solid var(--evern-darker-bg-color);
+  border-radius: 0.8rem;
+  max-width: 11rem;
+}

@@ -1,19 +1,8 @@
-const emailSpan = document.querySelector('.email-link');
-const emailAddress = "mail@jpetrak.dev";
+const sidePanel = document.getElementById('side-panel');
+const openBtn = document.getElementById('open-panel-btn');
+const body = document.querySelector('body');
 
-emailSpan.addEventListener('click', async () => {
-  try {
-    await navigator.clipboard.writeText(emailAddress);
-    
-    // Visual feedback changes only the span's text
-    emailSpan.textContent = "Copied!";
-    
-    // Revert text after 2 seconds
-    setTimeout(() => {
-      emailSpan.textContent = emailAddress;
-    }, 2000);
-    
-  } catch (err) {
-    console.error("Failed to copy: ", err);
-  }
+openBtn.addEventListener('click', () => {
+  sidePanel.classList.toggle('open');
+  body.style.paddingLeft = sidePanel.classList.contains('open') ? '7rem' : '';
 });

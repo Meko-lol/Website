@@ -9,8 +9,9 @@
   --normal-bg-color: #A0A0A0;
   --dark-bg-color: #404040;
   --evern-darker-bg-color: #303030;
-
+  --dark-dark-color: #282828;
 }
+
 
 body {
   font-family: 'Commissioner', sans-serif;
@@ -20,6 +21,7 @@ body {
   padding-top: 0.7rem;
   padding-left: 2rem;
   padding-right: 2rem;
+  transition: padding-left 0.3s;
 }
 
 h1 {
@@ -55,4 +57,20 @@ a:hover {
 .phone-link:hover {
   color: var(--normal-color);
   font-weight: bold;
+}
+
+.panel {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100vh;
+  transition: transform 0.3s;
+  background-color: var(--dark-dark-color);
+  max-width: 7rem;
+  
+}
+
+.panel.open {
+  transform: translateX(250px);
 }

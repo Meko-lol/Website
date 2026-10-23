@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -7,16 +8,22 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <button id="open-panel-btn">Menu</button>
     <h1>Jan Petrák</h1>
     <main>
-      <button id="open-panel-btn">☰ Menu</button>
       <div id="side-panel" class="panel">
-          <ul class="panel-content">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+        <ul class="side-panel-container">
+          <li class="menu-card"><a href="#">Home</a></li>
+          <li class="menu-card"><a href="#">About</a></li>
+          <li class="menu-card"><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="side-panel-container apps-panel">
+          <ul class="apps-list">
+            <li class="menu-card"><a href="https://home.jpetrak.dev">Homarr</a></li>
+            <li class="menu-card"><a href="https://jellyfin.jpetrak.dev">Jellyfin</a></li>
           </ul>
+          <button class="apps-btn">Apps</button>
+        </div>
       </div>
 
       <section class="obsah">

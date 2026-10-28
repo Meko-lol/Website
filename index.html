@@ -14,34 +14,76 @@
       <div id="side-panel" class="panel">
         <ul class="side-panel-container">
           <li class="menu-card"><a href="#">Home</a></li>
-          <li class="menu-card"><a href="#">About</a></li>
+          <li class="menu-card"><a href="#about">About</a></li>
+          <li class="menu-card"><a href="#projects">Projects</a></li>
           <li class="menu-card"><a href="#contact">Contact</a></li>
         </ul>
         <div class="side-panel-container apps-panel">
-          <ul class="apps-list">
-            <li class="menu-card"><a href="https://home.jpetrak.dev">Homarr</a></li>
-            <li class="menu-card"><a href="https://jellyfin.jpetrak.dev">Jellyfin</a></li>
+          <ul class="apps-list" id="apps-list">
+            <li class="menu-card"><a href="https://www.linkedin.com/in/jan-petr%C3%A1k-13b7553b1/">Linkedin</a></li>
+            <li class="menu-card"><a href="https://github.com/Meko-lol">Github</a></li>
+            <li class="menu-card"><a href="https://gitea.jpetrak.dev">Gitea</a></li>
           </ul>
-          <button class="apps-btn">Apps</button>
+          <button class="apps-btn">Socials</button>
         </div>
       </div>
 
-      <section class="obsah">
+      <section class="obsah" id="about">
         <article class="o-me">
-          <h2 class="article-heading">O mě</h2>
-          <p class="article-content">
-            Cauky jmenuju se Honza je mi 17 let a studuju IT
-            Ucim se delat stranky zacinam s moji a jak vidite stoji to za velke hovno
-          </p>
+          <h2 class="article-heading">About me</h2>
+          
+          <p class="article-content">Hi, I'm Honza, a 17-year-old IT student at SPŠE Ječná in Prague.</p>
+          <p class="article-content">I love building things, from websites to my own projects that teach me something new.</p>
+          <p class="article-content">Outside of coding, you'll find me at the gym, on my bike, or out for a run.</p>
+        </article>
+
+        <article class="projects" id="projects">
+          <h2 class="article-heading">Projects</h2>
+
+          <div class="article-content">
+            <h3>War Thunder Telemetry Dashboard</h3>
+            <div class="project-content">
+              <p>Java app that reads live data from War Thunder's API and shows it in a dashboard. </p>
+              <p>It can also override game values like altitude or speed in test drives.</p>
+              <p>Java · Swing · REST API · Jackson</p>
+              <a href="https://github.com/Meko-lol/Projekt_WT_Devmenu">Code on GitHub</a>
+            </div>
+          </div>
+
+          <div class="article-content">
+            <h3>Prisoner of the Depths</h3>
+            <div class="project-content">
+              <p>Text adventure game where you escape an underground dwarven ruin. </p>
+              <p>The map is generated randomly every playthrough, and all rooms,</p>
+              <p>items and characters are loaded from JSON files.</p>
+              <p>Java · JSON · Command pattern</p>
+              <a href="https://github.com/Meko-lol/Projekt">Code on GitHub</a>
+            </div>
+          </div>
+
+          <div class="article-content">
+            <h3>Personal website</h3>
+            <div class="project-content">
+              <p>My first website, built with HTML, CSS and JavaScript.</p>
+              <a href="https://github.com/Meko-lol/...">Code on GitHub</a>
+            </div>
+          </div>
+
+          <div class="article-content">
+            <h3>Homelab</h3>
+            <div class="project-content">
+              <p>My own self-hosted server running services on jpetrak.dev subdomains.</p>
+              <p>Gitea for my Git repositories, Jellyfin as a media server and Homarr as a dashboard for everything.</p>
+              <p>Self-hosting · Linux · Networking · Domains</p>
+              <a href="https://gitea.jpetrak.dev">My Gitea</a>
+            </div>
+          </div>
         </article>
       </section>
 
-      <h2>kontakt</h2>
+      <h2>Contact</h2>
       <div id="contact">
         <p class="contact-card">eMail: <a href="mailto:mail@jpetrak.dev">mail@jpetrak.dev</a></p>
-        <p class="contact-card">Phone: <a href="tel:+420603441250">+420 603 441 256</a></p>
-        <p class="contact-card">btw zito zdravim</p>
-        <p class="contact-card">uiiaiuiiiiai</p>
       </div>
     </main>
     <script src="script.js"></script>

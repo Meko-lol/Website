@@ -4,9 +4,10 @@
   --highlight-color: #FFFFFF;
   --highlight-color-2: #F0F0F0;
   --normal-color: #E0E0E0;
-  --light-bg-color: #C0C0C0;
+  --light-bg-color: #505050;
   --normal-bg-color: #A0A0A0;
   --dark-bg-color: #404040;
+  --medium-color: #606060;
   --evern-darker-bg-color: #303030;
   --dark-dark-color: #282828;
   --dark3-color: #242424;
@@ -34,7 +35,7 @@ h2 {
 }
 
 a {
-  color: var(--normal-color);
+  color: var(--highlight-color-2);
   text-decoration: none;
 
 }
@@ -46,14 +47,16 @@ a:hover {
 }
 
 button {
-  background-color: var(--light-bg-color);
+  background-color: var(--medium-color);
   padding: 0.4rem;
   padding-top: 0.1rem;
   padding-bottom: 0.15rem;
-  border: 0.2rem solid var(--dark-bg-color);
+  border: 0.2rem solid var(--normal-bg-color);
   border-radius: 0.6rem;
   font-family: inherit;
   font-size: inherit;
+  color: white;
+  font-weight: bold;
 }
 
 button:hover {
@@ -101,7 +104,6 @@ button:hover {
 .apps-btn {
   width: 100%;
   box-sizing: border-box;
-  position: fixed;
 }
 
 .side-panel-container {
@@ -151,4 +153,17 @@ button:hover {
 
 .project-content p {
   margin: 0;
+}
+
+
+.project-content a,
+.contact-card a {
+  color: var(--highlight-color);
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+
+.project-content a:hover,
+.contact-card a:hover {
+  text-decoration: none;
 }
